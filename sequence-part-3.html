@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Sequence,Selection and Loop(3)</title>
+	</head>
+	<body>
+		<h1>Sequence Part(3)</h1>
+		<a href="loops.html">loops.html</a>
+				
+		<script>
+	var myString="I wanna marry you.";
+	console.log(myString);
+	var myUpperString=myString.toUpperCase();
+	console.log(myUpperString);
+	var youLocation=myString.search('you');
+	console.log(youLocation);
+	var specialWord=myString.substr(youLocation,3);
+	console.log(specialWord);
+	specialWord=specialWord.toUpperCase();
+	var myNewString=myString.replace('you',specialWord);
+	console.log(myNewString);
+		</script>
+	</body>
+</html>
