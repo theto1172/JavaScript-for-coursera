@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Sequence,Selection and Loop(4)</title>
+	</head>
+	<body>
+		<h1>LOOP+SECTION</h1>			
+		<script>
+	var foods=["chocolate","beef","noodles","rice","apple","cheese"];
+	var myString="I am hungry for some";
+	        //** LOOP+SECTION **//
+
+	 for(var i=0;i<foods.length;i++){
+	 	
+	 	if(i%2){
+	 		
+	 		console.log(`${myString} ${foods[i].toUpperCase()}`);
+	 	}
+	 	else{
+	 		console.log(`${myString} ${foods[i]}`);
+	 	}
+	 }
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>FUNCTIONS</title>
+	</head>
+	<body>
+		<h1>Functions in JavaScript</h1>			
+		<script>
+	
+	function checkNum(){
+		var userNum=prompt("Enter A Whole Number","");
+		if(userNum<10){
+			console.log("You entered a number less than 10");
+			for(var i=0;i<10;i++){
+				console.log(`Here is a ${i}`);
+			}
+		}
+		else if(userNum>9){
+			console.log("You entered a big number");	
+		}
+		else{
+			console.log("ERROR: you didn't enter a number!");
+		}
+	}
+	checkNum();
+		</script>
+	</body>
+</html>
