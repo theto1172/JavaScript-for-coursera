@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>DOM Examples</title>
+	</head>
+	<body>
+		<h1>DOM Examples</h1>
+		<h2>document.getElementsByClassName</h2>
+		<p class="blue">Here is a paragraph</p>
+		<p class="blue">Here is another paragraph</p>
+		<p class="blue">Here is one more paragraph</p>
+		<script>
+		 var myClass = document.getElementsByClassName('blue');
+		 for (i=0;i<myClass.length;i++){
+		 	myClass[i].style.color="blue";
+		 }	
+		</script>
+	</body>
+</html>

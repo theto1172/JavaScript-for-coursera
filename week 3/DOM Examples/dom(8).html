@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>DOM Examples</title>
+	<style>
+	  .blue {color : red;}
+    </style>
+	</head>
+	<body>
+		<h1>DOM Examples</h1>
+		<h2>Creating Elements and Text Nodes</h2>
+		<div>  
+			<p>This is the first paragraph on the page</p>
+    	</div>
+		<script> 
+			var myTag = document.createElement('p');
+			var myText = document.createTextNode("Here is a new paragraph");
+			myTag.appendChild(myText);
+			var myDiv = document.querySelector('div');
+			myDiv.appendChild(myTag);
+		</script>
+
+
+	</body>
+</html>

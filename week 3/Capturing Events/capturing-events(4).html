@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>JavaScript Events</title>	
+	</head>
+	<body>
+		<h1>JavaScript Events</h1>
+		<h2>Submit Event</h2>
+		<form method="get"> 
+		  <label>Your Name:<input type="text" name="name" value="Thet"> </label>
+		  <input type="submit">
+		</form>
+		<script> 
+           var myForm = document.querySelector('form');
+           myForm.addEventListener('submit',function(evt){ 
+           	evt.preventDefault(); 
+           	var formData = document.querySelector('input').value;
+           	alert(formData);
+
+           });
+
+		</script> 
+
+	</body>
+</html>
